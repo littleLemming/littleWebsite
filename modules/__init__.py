@@ -12,6 +12,9 @@ def create_app(test_config=None):
         app.config.from_mapping(test_config)
 
     # first page - just for testing
+    @app.route('/')
+    def hello_fuck_fuck_fuckedifuckfuck():
+        return 'Hello MOTHAFUCKING world'
     @app.route('/hello')
     def hello():
         return 'HELLO WORLD'
